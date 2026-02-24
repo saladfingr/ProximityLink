@@ -1,38 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ProximityLink</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f5f7fa;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-            color: #2f3e4e;
-        }
-        p {
-            color: #6b7c93;
-            font-size: 18px;
-            margin: 5px 0;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ProximityLink</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f2f4f5;
+      color: #2c3e50;
+    }
+
+    /* NAV */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    .login-btn {
+      background: #3a6ea5;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(
+        to bottom,
+        #f2f4f5,
+        #e6ebed
+      );
+    }
+
+    .hero img {
+      width: 120px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 10px 0;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #6c7a89;
+    }
+
+    .cta {
+      margin-top: 30px;
+    }
+
+    .cta button {
+      background: #3a6ea5;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    /* FEATURES */
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 60px 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>ProximityLink</h1>
-        <p>Smarter dispatch, Faster response.</p>
-        <p><strong>Coming soon.</strong></p>
+
+  <!-- NAV -->
+  <div class="nav">
+    <img src="/logo_simple.png" class="logo" />
+    <button class="login-btn" onclick="goToLogin()">Login</button>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="/logo.png" />
+    <h1>ProximityLink</h1>
+    <p>Smarter dispatch. Faster response.</p>
+
+    <div class="cta">
+      <button>Request a Demo</button>
     </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="card">
+      <h3>Ping on Demand</h3>
+      <p>Locate responders instantly when needed.</p>
+    </div>
+
+    <div class="card">
+      <h3>Drive-Time Ranking</h3>
+      <p>Find the fastest responder, not the closest.</p>
+    </div>
+
+    <div class="card">
+      <h3>Audit Ready</h3>
+      <p>Full history of all dispatch decisions.</p>
+    </div>
+  </section>
+
+  <script>
+    function goToLogin() {
+      window.location.href = "/login.html";
+    }
+  </script>
+
 </body>
 </html>

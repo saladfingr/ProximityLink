@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="440" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5f67ff"></stop>
+      <stop offset="0.52" stop-color="#d64bb7"></stop>
+      <stop offset="1" stop-color="#f3a348"></stop>
+    </linearGradient>
+
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000000" flood-opacity="0.28"></feDropShadow>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="120" fill="#07101f"></rect>
+  <circle cx="120" cy="92" r="180" fill="url(#bg)" opacity="0.36"></circle>
+  <circle cx="410" cy="420" r="190" fill="#f3a348" opacity="0.14"></circle>
+
+  <g filter="url(#softShadow)">
+    <path d="M256 116
+         C274 116 288 130 288 148
+         L288 218
+         L358 218
+         C376 218 390 232 390 250
+         C390 268 376 282 358 282
+         L288 282
+         L288 364
+         C288 382 274 396 256 396
+         C238 396 224 382 224 364
+         L224 282
+         L154 282
+         C136 282 122 268 122 250
+         C122 232 136 218 154 218
+         L224 218
+         L224 148
+         C224 130 238 116 256 116Z" fill="white"></path>
+
+    <circle cx="256" cy="116" r="30" fill="white"></circle>
+    <circle cx="256" cy="396" r="30" fill="white"></circle>
+    <circle cx="122" cy="250" r="30" fill="white"></circle>
+    <circle cx="390" cy="250" r="30" fill="white"></circle>
+  </g>
+</svg>
